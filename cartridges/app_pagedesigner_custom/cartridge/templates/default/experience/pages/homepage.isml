@@ -1,0 +1,3 @@
+<isdecorate template="common/layout/pageWithoutModal">
+    <div>Hello</div>
+</isdecorate>
