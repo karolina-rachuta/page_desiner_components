@@ -23,29 +23,23 @@ var pageMetaData = require('*/cartridge/scripts/middleware/pageMetaData');
  * @param {renders} - isml
  * @param {serverfunction} - get
  */
-server.extend(module.SuperModule);
+server.extend(module.superModule);
 
-server.replace('Show', consentTracking.consent, cache.applyDefaultCache, function (req, res, next) {
+server.append('Show', consentTracking.consent, cache.applyDefaultCache, function (req, res, next) {
     var Site = require('dw/system/Site');
     var PageMgr = require('dw/experience/PageMgr');
     var pageMetaHelper = require('*/cartridge/scripts/helpers/pageMetaHelper');
 
     pageMetaHelper.setPageMetaTags(req.pageMetaData, Site.current);
-
-    var page = PageMgr.getPage('homepagepd');
+    var pageDesignerPageId = Site.getCurrent().getCustomPreferenceValue('pd_homepage');
+    var page = PageMgr.getPage(pageDesignerPageId);
 
     if (page && page.isVisible()) {
-        res.page('homepagepd');
+        res.page(pageDesignerPageId);
     } else {
         res.render('home/homePage');
     }
     next();
 }, pageMetaData.computedPageMetaData);
-
-server.get('ErrorNotFound', function (req, res, next) {
-    res.setStatusCode(404);
-    res.render('error/notFound');
-    next();
-});
 
 module.exports = server.exports();
