@@ -30,12 +30,20 @@
           "required": false
         },
         {
-          "id":"size",
-          "name":"Size",
-          "description":"The slide size.",
-          "type":"enum", "values":["small","medium","large"],
-          "required":true,
-          "default_value":"medium"
+          "id":"width",
+          "name":"Width",
+          "description":"The slide width, write number and unit.",
+          "type":"string",
+          "required": false,
+          "default_value":"100%"
+        },
+        {
+          "id":"height",
+          "name":"Height",
+          "description":"The slide height, write number and unit.",
+          "type":"string",
+          "required": false,
+          "default_value":"100%"
         },
         {
             "id": "shortDescription",
@@ -45,7 +53,7 @@
             "required": false
           },
           {
-            "id": "ctatitle",
+            "id": "ctaTitle",
             "name": "Slide CTA Titile",
             "description": "The CTA title shown by the slide.",
             "type": "string",
