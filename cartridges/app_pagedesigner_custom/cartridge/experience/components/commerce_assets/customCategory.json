@@ -1,0 +1,52 @@
+{
+    "name": "Category Tile",
+    "description": "This is category tile component.",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+        {
+            "id": "categoryTileSpec",
+            "name": "Category Tile Specifications",
+            "description": "Specification of the category to be displayed in the category tile.",
+            "attribute_definitions": [
+                {
+                    "id": "category",
+                    "name": "Category",
+                    "description": "Choose the category to be displayed.",
+                    "type": "category",
+                    "required": true
+                },
+                {
+                    "id": "categoryImage",
+                    "name": "Category Image",
+                    "description": "The image of the category to be displayed.",
+                    "type": "image",
+                    "required": false
+                },
+                {
+                    "id": "categoryShortDescription",
+                    "name": "Category Short Description",
+                    "description": "The Short Description of the category to be displayed.",
+                    "type": "string",
+                    "required": false
+                },
+                {
+                    "id": "categoryCtaTitle",
+                    "name": "Category CTA Title",
+                    "description": "The CTA Title of the category to be displayed.",
+                    "type": "string",
+                    "required": true
+                },
+                {
+                    "id": "categoryCtaTitlePosition",
+                    "name": "Category CTA Title Position - Top or Bottom",
+                    "description": "Position of the CTA Title of the category to be displayed (at the top or bottom).",
+                    "type": "enum",
+                    "values": ["top", "bottom"],
+                    "required": false
+                }
+
+            ]
+        }
+    ],
+    "region_definitions": []
+}

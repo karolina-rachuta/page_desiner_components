@@ -1,0 +1,60 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css');
+</isscript>
+<div class="container">
+    <isif condition="${pdict.category.ctaTitlePosition === " top"}">
+        <a href="${pdict.category.url}">
+            <p>${pdict.category.ctaTitle}</p>
+        </a>
+    </isif>
+    
+        <div class="ITC-container">
+        <div class="row ITC-row">
+            <div class="col-12">
+                <figure class="ITC-figure image-component">
+                    <picture>
+                        <source srcset="${pdict.category.image.src.tablet}" media="(min-width: 768px)" />
+                        <source srcset="${pdict.category.image.src.desktop}" media="(min-width: 1024px)" />
+                        <a href="${pdict.category.url}">
+                            <img class="ITC-image image-fluid common-image-component"
+                                src="${pdict.category.image.src.mobile}"
+                                style="--focal-point-x:${pdict.category.image.focalPointX}; --focal-point-y:${pdict.category.image.focalPointY}"
+                                alt="" />
+                        </a>
+                    </picture>
+                </figure>
+            </div>
+        </div>
+    </div>
+ 
+   
+    <iscomment> <div class="ITC-container">
+        <div class="row ITC-row">
+            <div class="col-12">
+                <figure class="ITC-figure image-component">
+                    <picture>
+                        <source srcset="${pdict.category.imageURL.src.tablet}" media="(min-width: 768px)" />
+                        <source srcset="${pdict.category.imageURL.src.desktop}" media="(min-width: 1024px)" />
+                        <a href="${pdict.category.url}">
+                            <img class="ITC-image image-fluid common-image-component"
+                                src="${pdict.category.imageURL.src.mobile}"
+                                style="--focal-point-x:${pdict.category.imageURL.focalPointX}; --focal-point-y:${pdict.category.imageURL.focalPointY}"
+                                alt="" />
+                        </a>
+                    </picture>
+                </figure>
+            </div>
+        </div>
+    </div> </iscomment>
+ 
+    <a href="${pdict.category.url}">
+        <h3>${pdict.category.name}</h3>
+    </a>
+    <p>${pdict.category.description}</p>
+    <isif condition="${pdict.category.ctaTitlePosition === "bottom"}">
+        <a href="${pdict.category.url}">
+            <p>${pdict.category.ctaTitle}</p>
+        </a>
+    </isif>
+</div>
