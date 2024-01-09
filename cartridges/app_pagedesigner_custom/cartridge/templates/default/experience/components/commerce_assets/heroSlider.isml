@@ -3,11 +3,12 @@ Image (as background of the hero entire component),
 Short Description (at the bottom) and CTA (below short description)</iscomment>
 
 
-<div class="col-12"
+<div class="col-12 mt-2"
 style="background-image: url('${pdict.image.url}');
 background-repeat: no-repeat;
 background-size: cover;
-height="${pdict.height}";
+<iscomment> width = 100%
+min-height = 500px; </iscomment>
 ">
     <h3>${pdict.title}</h3>
     <isif condition="${pdict.shortDescription}">
