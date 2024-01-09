@@ -2,10 +2,18 @@
 Image (as background of the hero entire component), 
 Short Description (at the bottom) and CTA (below short description)</iscomment>
 
-<div class="col-12 center">
-<h3>${pdict.title}</h3>
-<iscomment> <img src="${dw.web.URLUtils.staticURL(pdict.image)}" alt="${pdict.alt? pdict.alt : "Image name"}" width="${pdict.width}" height="${pdict.height}"/> </iscomment>
-<iscomment> <img src="${pdict.image}" alt="${pdict.alt}" width="${pdict.width}" height="${pdict.height}"/> </iscomment>
-<p>${pdict.shortDescription}</p>
-<p>${pdict.ctaTitle}</p>
+
+<div class="col-12"
+style="background-image: url('${pdict.image.url}');
+background-repeat: no-repeat;
+background-size: cover;
+height="${pdict.height}";
+">
+    <h3>${pdict.title}</h3>
+    <isif condition="${pdict.shortDescription}">
+            <p>${pdict.shortDescription}</p>
+    </isif>
+    <isif condition="${pdict.ctaTitle}">
+            <p>${pdict.ctaTitle}</p>
+    </isif>
 </div>

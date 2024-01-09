@@ -8,7 +8,9 @@ var HashMap = require('dw/util/HashMap');
 module.exports.render = function (context) {
     var model = new HashMap();
     model.title = context.content.title;
-    model.image = context.content.image;
+    model.image = {
+        url: context.content.image.file.url
+    };
     model.alt = context.content.alt;
     model.width = context.content.width;
     model.height = context.content.height;

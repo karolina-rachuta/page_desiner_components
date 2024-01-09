@@ -19,7 +19,7 @@
           "id": "image",
           "name": "Slide Image Background",
           "description": "The background image shown by the slide.",
-          "type": "file",
+          "type": "image",
           "required": true
         },
         {
