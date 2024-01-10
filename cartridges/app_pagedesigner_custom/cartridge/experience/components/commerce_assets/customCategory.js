@@ -5,7 +5,7 @@ var Template = require('dw/util/Template');
 var HashMap = require('dw/util/HashMap');
 var URLUtils = require('dw/web/URLUtils');
 var ImageTransformation = require('*/cartridge/experience/utilities/ImageTransformation.js');
-//category.description, .displayName, .ID, .image.url
+
 
 /**
  * Render logic for storefront.productTile component.
@@ -40,12 +40,6 @@ module.exports.render = function (context, modelIn) {
             // newCategoryObject.imageURL = choosenCategory.custom.slotBannerImage.getURL().toString();
             newCategoryObject.image = ImageTransformation.getScaledImage(choosenCategory.custom.slotBannerImage);
         }
- 
-        // newCategoryObject.imageURL = ImageTransformation.getScaledImage(choosenCategory.custom.slotBannerImage.getURL());
-        // if (choosenCategory.image) {
-        //     newCategoryObject.imageURL = ImageTransformation.getScaledImage(choosenCategory.image); 
-        // }
-        
 
         newCategoryObject.url = URLUtils.url('Search-Show', 'cgid', choosenCategory.ID).toString();
 

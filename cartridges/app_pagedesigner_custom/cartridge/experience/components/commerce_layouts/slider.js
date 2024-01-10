@@ -3,7 +3,7 @@
 
 var Template = require('dw/util/Template');
 var HashMap = require('dw/util/HashMap');
-var carouselBuilder = require('*/cartridge/scripts/experience/utilities/carouselBuilder.js');
+var sliderBuilder = require('*/cartridge/scripts/experience/utilities/sliderBuilder.js');
 
 /**
  * Render logic for storefront.carousel layout.
@@ -16,7 +16,7 @@ module.exports.render = function (context, modelIn) {
     var model = modelIn || new HashMap();
     // var component = context.component;
     // model.regions = PageRenderHelper.getRegionModelRegistry(component);
-    model = carouselBuilder.init(model, context);
+    model = sliderBuilder.init(model, context);
 
     // instruct 24 hours relative pagecache
     var expires = new Date();
