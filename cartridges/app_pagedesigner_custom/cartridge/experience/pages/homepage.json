@@ -3,8 +3,8 @@
     "description":"A storefront homepage.",
     "region_definitions":[
        {
-         "id":"header",
-         "name":"Header",
+         "id":"hero",
+         "name":"Hero",
           "max_components":2
        },
        {
@@ -13,11 +13,6 @@
          "component_type_exclusions":[
              {"type_id":"banner"}
          ]
-       },
-       {
-         "id":"footer",
-         "name":"Footer",
-         "max_components":2
-         }
+       }
     ]
 }

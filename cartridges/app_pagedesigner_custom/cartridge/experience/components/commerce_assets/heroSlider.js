@@ -12,8 +12,6 @@ module.exports.render = function (context) {
         url: context.content.image.file.url
     };
     model.alt = context.content.alt;
-    model.width = context.content.width;
-    model.height = context.content.height;
     model.shortDescription = context.content.shortDescription;
     model.ctaTitle = context.content.ctaTitle;
 

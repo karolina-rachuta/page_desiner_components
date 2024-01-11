@@ -3,39 +3,40 @@
     assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css');
     assets.addCss('/css/experience/components/commerceAssets/customCategory.css')
 </isscript>
-<div class="container">
+<div class="container container__customCategory" style="background-color: #99ccff;">
     <isif condition="${pdict.category.ctaTitlePosition === "top"}">
-        <a href="${pdict.category.url}">
+        <a class = "customCategory__link" href="${pdict.category.url}">
             <p>${pdict.category.ctaTitle}</p>
         </a>
     </isif>
-    
-        <div class="ITC-container">
-        <div class="row ITC-row">
-            <div class="col-12">
-                <figure class="ITC-figure image-component">
+    <div>
+        <div class="row custom__category_container">
+            <div class="col-12 image-size">
+            <a href="${pdict.category.url}">
+                <figure class="image-component">
                     <picture>
                         <source srcset="${pdict.category.image.src.tablet}" media="(min-width: 768px)" />
                         <source srcset="${pdict.category.image.src.desktop}" media="(min-width: 1024px)" />
-                        <a href="${pdict.category.url}">
-                            <img class="ITC-image image-fluid common-image-component"
+                            <img class="image-fluid common-image-component custom_category_img"
                                 src="${pdict.category.image.src.mobile}"
                                 style="--focal-point-x:${pdict.category.image.focalPointX}; --focal-point-y:${pdict.category.image.focalPointY}"
                                 alt="" />
-                        </a>
                     </picture>
                 </figure>
+                </a>
             </div>
         </div>
     </div>
- 
+<div class = "d-flex flex-column justify-content-between custom_category__text_container">
     <a href="${pdict.category.url}">
         <h3 class="custom_category_title">${pdict.category.name}</h3>
     </a>
-    <p>${pdict.category.description}</p>
+    <p class ="custom_category_short_description">${pdict.category.description}</p>
     <isif condition="${pdict.category.ctaTitlePosition === "bottom"}">
         <a href="${pdict.category.url}">
             <p>${pdict.category.ctaTitle}</p>
         </a>
     </isif>
+</div>
+
 </div>

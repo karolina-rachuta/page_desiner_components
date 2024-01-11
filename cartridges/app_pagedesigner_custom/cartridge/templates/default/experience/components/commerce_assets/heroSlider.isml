@@ -1,20 +1,23 @@
-<iscomment> Title (at the top), 
-Image (as background of the hero entire component), 
-Short Description (at the bottom) and CTA (below short description)</iscomment>
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    <iscomment> assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css'); </iscomment>
+    assets.addCss('/css/experience/components/commerceAssets/heroSlider.css')
+</isscript>
+<iscomment> Title (at the top),
+    Image (as background of the hero entire component),
+    Short Description (at the bottom) and CTA (below short description)</iscomment>
 
 
-<div class="col-12"
-style="background-image: url('${pdict.image.url}');
-background-repeat: no-repeat;
-background-size: cover;
-<iscomment> width = 100%
-min-height = 500px; </iscomment>
-">
-    <h3>${pdict.title}</h3>
-    <isif condition="${pdict.shortDescription}">
-            <p>${pdict.shortDescription}</p>
-    </isif>
-    <isif condition="${pdict.ctaTitle}">
-            <p>${pdict.ctaTitle}</p>
-    </isif>
+<div class="col-12 hero__slider d-flex flex-column justify-content-between"
+    style="background-image: url('${pdict.image.url}')">
+
+    <h3 class="hero__slider_title mt-2">${pdict.title}</h3>
+    <div>
+        <isif condition="${pdict.shortDescription}">
+            <p class="mb-0 hero__slider_text hero__slider_text--description">${pdict.shortDescription}</p>
+        </isif>
+        <isif condition="${pdict.ctaTitle}">
+            <p class=" mb-0 hero__slider_text hero__slider_text--cta">${pdict.ctaTitle}</p>
+        </isif>
+    </div>
 </div>

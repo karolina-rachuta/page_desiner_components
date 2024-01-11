@@ -30,22 +30,6 @@
           "required": false
         },
         {
-          "id":"width",
-          "name":"Width",
-          "description":"The slide width, write number and unit.",
-          "type":"string",
-          "required": false,
-          "default_value":"100%"
-        },
-        {
-          "id":"height",
-          "name":"Height",
-          "description":"The slide height, write number and unit.",
-          "type":"string",
-          "required": false,
-          "default_value":"100%"
-        },
-        {
             "id": "shortDescription",
             "name": "Slide Short Description",
             "description": "The short description shown by the slide.",

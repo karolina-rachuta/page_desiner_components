@@ -3,7 +3,7 @@
     assets.addCss('/css/experience/components/commerceLayouts/carousel.css');
     assets.addJs('/js/carousel.js');
 </isscript>
-
+    <div class="mt-4">
     <isif condition="${pdict.title}">
         <div class="row">
             <div class="col-12">
@@ -39,4 +39,5 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
+    </div>
     </div>
