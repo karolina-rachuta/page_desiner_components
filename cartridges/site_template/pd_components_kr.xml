@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="RefArchSharedLibrary"> 
+
+<content content-id="homepagepd">
+        <display-name xml:lang="x-default">HomePagePD</display-name>
+        <description xml:lang="x-default">This home page is made for the pd_component task</description>
+        <type>page.homepage</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>false</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="RefArch">false</searchable-flag>
+        <page-attributes>
+            <page-title xml:lang="x-default">HomepagePD</page-title>
+        </page-attributes>
+        <content-links>
+            <content-link content-id="8216e7aa16a3114db66188b94c" type="page.homepage.main">
+                <position>1.0</position>
+            </content-link>
+            <content-link content-id="bc87959e295da4ade7b2ddef1d" type="page.homepage.hero">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="52dbc5e910897e242caabbf753" type="page.homepage.main">
+                <position>0.0</position>
+            </content-link>
+        </content-links>
+        <sitemap-included-flag site-id="RefArch">false</sitemap-included-flag>
+    </content>
+
+ <content content-id="bc87959e295da4ade7b2ddef1d">
+        <type>component.commerce_layouts.slider</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "xsCarouselIndicators" : false,
+  "smCarouselControls" : false,
+  "mdCarouselIndicators" : false,
+  "xsCarouselControls" : false,
+  "smCarouselIndicators" : false,
+  "xsCarouselSlidesToDisplay" : 1,
+  "mdCarouselSlidesToDisplay" : 1,
+  "textHeadline" : null,
+  "smCarouselSlidesToDisplay" : 1
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="4596f7119c57a99bdb8db79c5c" type="component.commerce_layouts.slider.slides">
+                <position>1.0</position>
+            </content-link>
+            <content-link content-id="7e5fa2f5c2303d1fff5fcdef95" type="component.commerce_layouts.slider.slides">
+                <position>2.0</position>
+            </content-link>
+            <content-link content-id="f43253c22273d4c43ec7419947" type="component.commerce_layouts.slider.slides">
+                <position>0.0</position>
+            </content-link>
+        </content-links>
+    </content>
+
+<content content-id="4596f7119c57a99bdb8db79c5c">
+        <type>component.commerce_assets.heroSlider</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "image" : {
+    "path" : "/images/homepage/car-shoes.jpg",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    },
+    "meta_data" : {
+      "height" : 600,
+      "width" : 2200
+    }
+  },
+  "ctaTitle" : "Check!",
+  "alt" : null,
+  "width" : null,
+  "shortDescription" : "The most comfortable!",
+  "title" : "Best shoes!",
+  "height" : null
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+<content content-id="f43253c22273d4c43ec7419947">
+        <type>component.commerce_assets.heroSlider</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "image" : {
+    "path" : "/images/homepage/homepage-2/large.jpg",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    },
+    "meta_data" : {
+      "height" : 657,
+      "width" : 2000
+    }
+  },
+  "ctaTitle" : "Check it!",
+  "alt" : null,
+  "width" : null,
+  "shortDescription" : "New collection is ready",
+  "title" : "New!",
+  "height" : null
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="f440debd8b1d9dad90970b1ff3">
+        <display-name xml:lang="x-default">Product Tile Component</display-name>
+        <type>component.commerce_assets.productTile</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "product" : "883360544007M",
+  "displayRatings" : false
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+    
+<content content-id="48754edd8c9777cb6b709b49ec">
+        <display-name xml:lang="x-default">Editorial Rich Text Component</display-name>
+        <type>component.commerce_assets.editorialRichText</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "richText" : "&lt;h3&gt;What's New Trending&lt;/h3&gt;"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="4ca336b2ac97a68be62a4b7444">
+        <display-name xml:lang="x-default">Editorial Rich Text Component</display-name>
+        <type>component.commerce_assets.editorialRichText</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "richText" : "&lt;p&gt;&lt;span style=\"background-color: rgb(249, 249, 249); color: rgb(0, 0, 0);\"&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;a style=\"background-color: rgb(249, 249, 249); color: rgb(0, 0, 0);\" data-category-catalog-id=\"storefront-catalog-m-en\" data-category-id=\"newarrivals\" data-link-label=\"New Arrivals\" data-link-type=\"category\" target=\"_self\" href=\"$url('Search-Show', 'cgid', 'newarrivals')$\"&gt;New Arrivals&lt;/a&gt;&lt;/p&gt;"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+<content content-id="7e5fa2f5c2303d1fff5fcdef95">
+        <type>component.commerce_assets.heroSlider</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "image" : {
+    "path" : "/images/homepage/car-spring.jpg",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    },
+    "meta_data" : {
+      "height" : 600,
+      "width" : 2200
+    }
+  },
+  "ctaTitle" : "Check it!",
+  "alt" : null,
+  "width" : null,
+  "shortDescription" : "Newest collection!",
+  "title" : "Jewellery!",
+  "height" : null
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="7e7c782c53c99451aa5fdae65f">
+        <display-name xml:lang="x-default">Image And Text Component</display-name>
+        <type>component.commerce_assets.imageAndText</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "ITCLink" : "$url('Search-Show', 'cgid', 'mens-clothing-suits')$",
+  "ITCText" : null,
+  "image" : {
+    "path" : "placeholder%20410x410.png",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    }
+  },
+  "heading" : "&lt;p&gt;Checkout Men's suits&lt;/p&gt;"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+
+<content content-id="2ad87f5459ab8fde0c4f59c14e">
+        <display-name xml:lang="x-default">3 Row x 1 Col (Mobile), 1 Row x 3 Col (Desktop) Component</display-name>
+        <type>component.commerce_layouts.mobileGrid3r1c</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="36a3900a78af117b4e5cc7daec" type="component.commerce_layouts.mobileGrid3r1c.column1">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="316bc95e8aca7e66599640fb04" type="component.commerce_layouts.mobileGrid3r1c.column3">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="6fbafc14223bfc4234011b4e40" type="component.commerce_layouts.mobileGrid3r1c.column2">
+                <position>0.0</position>
+            </content-link>
+        </content-links>
+    </content>
+
+    <content content-id="52dbc5e910897e242caabbf753">
+        <type>component.commerce_layouts.mobileGrid3r1c</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="e3fe216091ec112cfbb589c243" type="component.commerce_layouts.mobileGrid3r1c.column2">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="72c905fe1293b79b0ad9a98fb1" type="component.commerce_layouts.mobileGrid3r1c.column3">
+                <position>0.0</position>
+            </content-link>
+            <content-link content-id="794a3e2ae091b8fb5e9be535f2" type="component.commerce_layouts.mobileGrid3r1c.column1">
+                <position>0.0</position>
+            </content-link>
+        </content-links>
+    </content>
+
+<content content-id="794a3e2ae091b8fb5e9be535f2">
+        <type>component.commerce_assets.customCategory</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "categoryCtaTitle" : "Best for women!",
+  "categoryCtaTitlePosition" : "bottom",
+  "categoryImage" : {
+    "path" : "/images/homepage/homepage-1/medium.jpg",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    },
+    "meta_data" : {
+      "height" : 365,
+      "width" : 600
+    }
+  },
+  "categoryShortDescription" : "New collection",
+  "category" : "womens"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+<content content-id="e3fe216091ec112cfbb589c243">
+        <type>component.commerce_assets.customCategory</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "categoryCtaTitle" : "Check this out!",
+  "categoryCtaTitlePosition" : "bottom",
+  "categoryImage" : {
+    "path" : "/images/homepage/homepage-3/small.jpg",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    },
+    "meta_data" : {
+      "height" : 256,
+      "width" : 550
+    }
+  },
+  "categoryShortDescription" : "Collection for Men",
+  "category" : "mens"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+
+<content content-id="72c905fe1293b79b0ad9a98fb1">
+        <type>component.commerce_assets.customCategory</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "categoryCtaTitle" : "Add some sparkle!",
+  "categoryCtaTitlePosition" : "bottom",
+  "categoryImage" : {
+    "path" : "/images/homepage/homepage-6/small.jpg",
+    "focal_point" : {
+      "x" : 0.5,
+      "y" : 0.5
+    },
+    "meta_data" : {
+      "height" : 254,
+      "width" : 544
+    }
+  },
+  "categoryShortDescription" : "Accessories",
+  "category" : "womens-jewelry"
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+<content content-id="8216e7aa16a3114db66188b94c">
+        <type>component.commerce_layouts.slider</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "xsCarouselIndicators" : false,
+  "smCarouselControls" : false,
+  "mdCarouselIndicators" : false,
+  "xsCarouselControls" : false,
+  "smCarouselIndicators" : false,
+  "xsCarouselSlidesToDisplay" : 1,
+  "mdCarouselSlidesToDisplay" : 3,
+  "textHeadline" : "Bestsellers!",
+  "smCarouselSlidesToDisplay" : 2
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+        <content-links>
+            <content-link content-id="d5abc20a5d47bf5aad8b9fdd4d" type="component.commerce_layouts.slider.slides">
+                <position>1.0</position>
+            </content-link>
+            <content-link content-id="d68cb099c9fee9cd7b86123974" type="component.commerce_layouts.slider.slides">
+                <position>2.0</position>
+            </content-link>
+            <content-link content-id="d5473c2fc340e762875247c80f" type="component.commerce_layouts.slider.slides">
+                <position>0.0</position>
+            </content-link>
+        </content-links>
+    </content>
+
+<content content-id="d5473c2fc340e762875247c80f">
+        <type>component.commerce_assets.productTile</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "product" : "25493717M",
+  "displayRatings" : false
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="d5abc20a5d47bf5aad8b9fdd4d">
+        <type>component.commerce_assets.productTile</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "product" : "25720018M",
+  "displayRatings" : false
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="d68cb099c9fee9cd7b86123974">
+        <type>component.commerce_assets.productTile</type>
+        <config>{
+  "visibility" : [ ]
+}</config>
+        <data xml:lang="x-default">{
+  "product" : "25772779M",
+  "displayRatings" : false
+}</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="RefArch">true</online-flag>
+        <page-attributes/>
+    </content>
+
+</library>
