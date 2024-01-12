@@ -13,21 +13,23 @@ var PageRenderHelper = require('*/cartridge/experience/utilities/PageRenderHelpe
  */
 function init(model, context) {
     model.regions = PageRenderHelper.getRegionModelRegistry(context.component);
+    var xsCarouselSlidesToDisplay = context.content.xsCarouselSlidesToDisplay;
+    var smCarouselSlidesToDisplay = context.content.smCarouselSlidesToDisplay;
+    var mdCarouselSlidesToDisplay = context.content.mdCarouselSlidesToDisplay;
 
-    var xsColSize = 12 / parseInt(context.content.xsCarouselSlidesToDisplay, 10);
-    var smColSize = 12 / parseInt(context.content.smCarouselSlidesToDisplay, 10);
-    var mdColSize = 12 / parseInt(context.content.mdCarouselSlidesToDisplay, 10);
+    var xsColSize = 12 / parseInt(xsCarouselSlidesToDisplay, 10);
+    var smColSize = 12 / parseInt(smCarouselSlidesToDisplay, 10);
+    var mdColSize = 12 / parseInt(mdCarouselSlidesToDisplay, 10);
 
     var sizeExtraSmall = ' col-' + xsColSize;
     var sizeSmall = ' col-sm-' + smColSize;
     var sizeMedium = ' col-md-' + mdColSize;
 
-    model.regions.slides.setClassName('carousel-inner row flex-nowrap mx-0');
-    model.regions.slides.setComponentClassName('carousel-item px-0' + sizeExtraSmall + sizeSmall + sizeMedium);
-    model.regions.slides.setComponentClassName('carousel-item active px-0' + sizeExtraSmall + sizeSmall + sizeMedium, { position: 0 });
+    model.regions.slides.setClassName('carousel-inner row flex-nowrap m-auto');
+    model.regions.slides.setComponentClassName('carousel-item' + sizeExtraSmall + sizeSmall + sizeMedium);
+    model.regions.slides.setComponentClassName('carousel-item active' + sizeExtraSmall + sizeSmall + sizeMedium, { position: 0 });
 
     var numberOfSlides = model.regions.slides.region.size;
-
 
     for (var i = 0; i < numberOfSlides; i++) {
         model.regions.slides.setComponentAttribute('data-position', i, { position: i });

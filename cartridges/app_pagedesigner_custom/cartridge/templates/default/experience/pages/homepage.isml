@@ -1,4 +1,4 @@
-<isdecorate template="common/layout/pageWithoutModal">
+<isdecorate template="common/layout/pdStorePage">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addCss('/css/experience/storePage.css');

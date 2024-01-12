@@ -1,6 +1,3 @@
-var ImageTransformation = {};
-var BREAKPOINTS = require('*/cartridge/experience/breakpoints.json');
-var Image = require('dw/experience/image/Image');
 var MediaFile = require('dw/content/MediaFile');
 var base = module.superModule;
 

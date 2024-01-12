@@ -32,12 +32,9 @@ module.exports.render = function (context, modelIn) {
             newCategoryObject.description = choosenCategory.description;
         }
 
-        // custom image:
         if (content.categoryImage) {
             newCategoryObject.image = ImageTransformation.getScaledImage(content.categoryImage);
         } else if (choosenCategory.custom.slotBannerImage.url) {
-            // catalog image:
-            // newCategoryObject.imageURL = choosenCategory.custom.slotBannerImage.getURL().toString();
             newCategoryObject.image = ImageTransformation.getScaledImage(choosenCategory.custom.slotBannerImage);
         }
 
@@ -48,8 +45,6 @@ module.exports.render = function (context, modelIn) {
     }
     model.category = newCategoryObject;
     
-    var contentCatImage = content.categoryImage;
-    var check = model;
     // instruct 24 hours relative pagecache
     var expires = new Date();
     expires.setDate(expires.getDate() + 1); // this handles overflow automatically

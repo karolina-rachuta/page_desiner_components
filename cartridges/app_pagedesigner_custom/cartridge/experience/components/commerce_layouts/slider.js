@@ -14,8 +14,7 @@ var sliderBuilder = require('*/cartridge/scripts/experience/utilities/sliderBuil
  */
 module.exports.render = function (context, modelIn) {
     var model = modelIn || new HashMap();
-    // var component = context.component;
-    // model.regions = PageRenderHelper.getRegionModelRegistry(component);
+
     model = sliderBuilder.init(model, context);
 
     // instruct 24 hours relative pagecache

@@ -3,14 +3,14 @@
     assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css');
     assets.addCss('/css/experience/components/commerceAssets/customCategory.css')
 </isscript>
-<div class="container container__customCategory" style="background-color: #99ccff;">
+<div class="container container_custom_category">
     <isif condition="${pdict.category.ctaTitlePosition === "top"}">
-        <a class = "customCategory__link" href="${pdict.category.url}">
+        <a href="${pdict.category.url}">
             <p>${pdict.category.ctaTitle}</p>
         </a>
     </isif>
     <div>
-        <div class="row custom__category_container">
+        <div>
             <div class="col-12 image-size">
             <a href="${pdict.category.url}">
                 <figure class="image-component">
@@ -27,7 +27,7 @@
             </div>
         </div>
     </div>
-<div class = "d-flex flex-column justify-content-between custom_category__text_container">
+<div class = "d-flex flex-column justify-content-between custom_category_text_container">
     <a href="${pdict.category.url}">
         <h3 class="custom_category_title">${pdict.category.name}</h3>
     </a>
@@ -38,5 +38,4 @@
         </a>
     </isif>
 </div>
-
 </div>
