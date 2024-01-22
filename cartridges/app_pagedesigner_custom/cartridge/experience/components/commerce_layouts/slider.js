@@ -4,6 +4,7 @@
 var Template = require('dw/util/Template');
 var HashMap = require('dw/util/HashMap');
 var sliderBuilder = require('*/cartridge/scripts/experience/utilities/sliderBuilder.js');
+var pageCache = require('*/cartridge/experience/utilities/pageCache.js');
 
 /**
  * Render logic for storefront.carousel layout.
@@ -17,10 +18,8 @@ module.exports.render = function (context, modelIn) {
 
     model = sliderBuilder.init(model, context);
 
-    // instruct 24 hours relative pagecache
-    var expires = new Date();
-    expires.setDate(expires.getDate() + 1); // this handles overflow automatically
-    response.setExpires(expires);
-
+   // instruct 24 hours relative pagecache
+   pageCache.setPageRelativeCache(response);
+   
     return new Template('experience/components/commerce_layouts/slider').render(model).text;
 };

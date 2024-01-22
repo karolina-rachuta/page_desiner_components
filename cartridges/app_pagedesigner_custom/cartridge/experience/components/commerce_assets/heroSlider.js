@@ -2,6 +2,7 @@
 
 var Template = require('dw/util/Template');
 var HashMap = require('dw/util/HashMap');
+var pageCache = require('*/cartridge/experience/utilities/pageCache.js');
 /**
  * Render logic for the component.
  */
@@ -16,9 +17,7 @@ module.exports.render = function (context) {
     model.ctaTitle = context.content.ctaTitle;
 
     // instruct 24 hours relative pagecache
-    var expires = new Date();
-    expires.setDate(expires.getDate() + 1); // this handles overflow automatically
-    response.setExpires(expires);
+    pageCache.setPageRelativeCache(response);
 
     return new Template('experience/components/commerce_assets/heroSlider').render(model).text;
 };

@@ -6,7 +6,7 @@
 <div class="container container_custom_category">
     <isif condition="${pdict.category.ctaTitlePosition === "top"}">
         <a href="${pdict.category.url}">
-            <p>${pdict.category.ctaTitle}</p>
+            <p class ="text-center">${pdict.category.ctaTitle}</p>
         </a>
     </isif>
     <div>
@@ -31,10 +31,10 @@
     <a href="${pdict.category.url}">
         <h3 class="custom_category_title">${pdict.category.name}</h3>
     </a>
-    <p class ="custom_category_short_description">${pdict.category.description}</p>
+    <p class ="text-center custom_category_short_description">${pdict.category.description}</p>
     <isif condition="${pdict.category.ctaTitlePosition === "bottom"}">
         <a href="${pdict.category.url}">
-            <p>${pdict.category.ctaTitle}</p>
+            <p class ="text-center">${pdict.category.ctaTitle}</p>
         </a>
     </isif>
 </div>

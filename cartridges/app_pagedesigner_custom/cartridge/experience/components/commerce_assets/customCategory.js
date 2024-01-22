@@ -5,6 +5,7 @@ var Template = require('dw/util/Template');
 var HashMap = require('dw/util/HashMap');
 var URLUtils = require('dw/web/URLUtils');
 var ImageTransformation = require('*/cartridge/experience/utilities/ImageTransformation.js');
+var pageCache = require('*/cartridge/experience/utilities/pageCache.js');
 
 
 /**
@@ -45,11 +46,8 @@ module.exports.render = function (context, modelIn) {
     }
     model.category = newCategoryObject;
     
-    // instruct 24 hours relative pagecache
-    var expires = new Date();
-    expires.setDate(expires.getDate() + 1); // this handles overflow automatically
-    response.setExpires(expires);
-    // no need for vary-by as the template is rendered as remote include
+     // instruct 24 hours relative pagecache
+     pageCache.setPageRelativeCache(response);
 
     return new Template('experience/components/commerce_assets/customCategory').render(model).text;
 };
