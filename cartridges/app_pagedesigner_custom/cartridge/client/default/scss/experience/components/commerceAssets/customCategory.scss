@@ -1,0 +1,45 @@
+@import "../../../../../../../../app_storefront_base/cartridge/client/default/scss/variables";
+@import "../../../variables";
+
+.container_custom_category {
+    min-height: 11.25rem;
+    background-color: $bgc;
+
+    .custom_category_title {
+        color: $black;
+        font-weight: bolder;
+    }
+
+    .image-size {
+        width: auto;
+        max-height: 7.5rem;
+        overflow: hidden;
+            @media only screen and (min-width: 544px) and (max-width: 970px){
+                max-height: 3.125rem;
+            }
+            @media only screen and (min-width: 970px) and (max-width: 1099px){
+                max-height: 5rem;
+            }
+            @media only screen and (min-width: 1100px) and (max-width: 1199px){
+                max-height: 6.25rem;
+            }
+    }
+
+    .custom_category_short_description {
+        font-style: italic;
+        font-size: 0.8125rem;
+    }
+
+    a {
+        text-decoration: none;
+            p {
+                color: $white;
+            }
+   }
+
+   .custom_category_text_container {
+        @media only screen and (min-width: 544px) and (max-width: 600px){
+            min-height: 9.375rem;
+        }
+   }
+}

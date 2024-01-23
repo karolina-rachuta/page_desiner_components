@@ -1,0 +1,23 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    <iscomment> assets.addCss('/css/experience/components/commerceAssets/imageAndTextCommon.css'); </iscomment>
+    assets.addCss('/css/experience/components/commerceAssets/heroSlider.css')
+</isscript>
+<iscomment> Title (at the top),
+    Image (as background of the hero entire component),
+    Short Description (at the bottom) and CTA (below short description)</iscomment>
+
+
+<div class="col-12 hero__slider position-relative d-flex flex-column justify-content-between"
+    style="background-image: url('${pdict.image.url}')">
+
+    <h3 class="hero__slider_title mt-2 position-relative text-left">${pdict.title}</h3>
+    <div>
+        <isif condition="${pdict.shortDescription}">
+            <p class="mb-0 hero__slider_text hero__slider_text--description position-relative text-left">${pdict.shortDescription}</p>
+        </isif>
+        <isif condition="${pdict.ctaTitle}">
+            <p class=" mb-0 hero__slider_text position-relative text-left hero__slider_text--cta">${pdict.ctaTitle}</p>
+        </isif>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+{
+    "name":"Homepage",
+    "description":"A storefront homepage.",
+    "region_definitions":[
+       {
+         "id":"hero",
+         "name":"Hero",
+          "max_components":2
+       },
+       {
+         "id":"main",
+         "name":"Main",
+         "component_type_exclusions":[
+             {"type_id":"banner"}
+         ]
+       }
+    ]
+}

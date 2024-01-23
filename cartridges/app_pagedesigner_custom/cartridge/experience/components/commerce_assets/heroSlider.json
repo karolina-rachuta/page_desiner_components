@@ -1,0 +1,50 @@
+{
+    "name": "Hero Slider",
+    "description": "A hero slider.",
+    "group": "commerce_assets",
+    "attribute_definition_groups": [
+      {
+       "id":"slide",
+       "name":"Slide Configuration",
+       "description":"You can define the title, image file, size and alt text and short description and CTA title for the slide.",
+       "attribute_definitions":[
+        {
+            "id": "title",
+            "name": "Slide Titile",
+            "description": "The title shown by the slide.",
+            "type": "string",
+            "required": true
+          },
+        {
+          "id": "image",
+          "name": "Slide Image Background",
+          "description": "The background image shown by the slide.",
+          "type": "image",
+          "required": true
+        },
+        {
+          "id": "alt",
+          "name": "Slide Image Alt Text",
+          "description": "The image alt text shown by the slide.",
+          "type": "string",
+          "required": false
+        },
+        {
+            "id": "shortDescription",
+            "name": "Slide Short Description",
+            "description": "The short description shown by the slide.",
+            "type": "string",
+            "required": false
+          },
+          {
+            "id": "ctaTitle",
+            "name": "Slide CTA Titile",
+            "description": "The CTA title shown by the slide.",
+            "type": "string",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "region_definitions": []
+   }
